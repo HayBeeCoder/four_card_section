@@ -1,0 +1,124 @@
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ .attribution {
+     font-size: 13px;
+     text-align: center;
+ }
+ 
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+ 
+ .container {
+     width: 95%;
+     max-width: 1200px;
+     margin: 1em auto;
+     padding: 2em 1em;
+     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+ }
+ 
+ h1 {
+     margin: 0;
+ }
+ 
+ h1+h1 {
+     margin-top: 0.1em;
+ }
+ 
+ .header {
+     text-align: center;
+     width: 55%;
+     margin: 0 auto;
+ }
+ 
+ .header__light {
+     font-weight: 200;
+ }
+ 
+ p {
+     margin-top: 0;
+     line-height: 1.5;
+ }
+ 
+ .flex {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 2em;
+     grid-column-gap: 2em;
+ }
+ 
+ .card {
+     padding: 0.5em;
+     margin: 0.5em;
+ }
+ 
+ .col {
+     display: grid;
+     grid-template-rows: repeat(2, 1fr);
+     grid-gap: 2em;
+     grid-row-gap: 2em;
+ }
+ 
+ div[class *="card__"] {
+     background-color: hsl(0, 0%, 98%);
+     border-top-width: 5px;
+     border-top-style: solid;
+     border-radius: 5px;
+     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+     padding: 2em;
+     padding-bottom: 1em;
+     position: relative;
+ }
+ 
+ .card__first {
+     align-self: center;
+     border-top: hsl(180, 62%, 55%);
+ }
+ 
+ .card__second {
+     border-top: hsl(0, 78%, 62%);
+ }
+ 
+ .card__third {
+     border-top: hsl(34, 97%, 64%);
+ }
+ 
+ .card__fourth {
+     align-self: center;
+     border-top: hsl(212, 86%, 64%);
+ }
+ 
+ h3 {
+     margin: 0;
+     margin-bottom: 0.5em;
+ }
+ 
+ .text-section {
+     margin-bottom: 2em;
+ }
+ 
+ .svg_container {
+     text-align: right;
+ }
+ 
+ @media screen and (max-width: 600px) {
+     .container {
+         padding: 2rem 0;
+     }
+     .col {
+         display: block;
+     }
+     .flex {
+         display: block;
+     }
+     div[class *="card__"] {
+         margin-bottom: 1.5rem;
+     }
+     .header {
+         text-align: center;
+         width: 100%;
+         margin: 0 auto;
+     }
+ }
